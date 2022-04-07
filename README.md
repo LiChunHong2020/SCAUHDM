@@ -27,7 +27,13 @@
     list_file.write('%s/VOCdevkit/VOC%s/JPEGImages_val/%s.jpg'%(wd, year, image_id))
     ```
 4. Run 'train'
-
+```
+    phi = 2
+    ...
+    classes_path = 'model_data/helmet_detection_classes.txt'
+    ...
+    model_path = "model_data/efficientdet-d2.pth"
+```
 
 ## Reference
 https://github.com/bubbliiiing/efficientdet-pytorch
