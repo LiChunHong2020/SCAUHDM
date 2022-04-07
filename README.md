@@ -12,6 +12,7 @@
             Annotations/
                 *.xml
                 ...
+                
 2. Run'VOCdevkit/VOC2007/voc2efficientdet.py' to generate the index of data.
 
 3. Run'voc_annotation.py' to generate a txt file about label informations.
