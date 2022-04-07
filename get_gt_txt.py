@@ -41,8 +41,6 @@ for image_id in image_ids:
             obj_name = obj.find('name').text
             if obj_name == 'no helmet':
                 obj_name = 'no_helmet'
-            # if obj_name == 'motoryclist_without_helmet':
-            #     obj_name = 'motorcyclist_without_helmet'
             '''
             ！！！！！！！！！！！！注意事项！！！！！！！！！！！！
             # 这一部分是当xml有无关的类的时候，可以取消下面代码的注释
