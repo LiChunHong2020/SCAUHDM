@@ -129,8 +129,8 @@ class BiFPN(nn.Module):
         # self.mhsa_p3 = BottleneckAttention(dim=112,fmap_size=(96, 96),heads=4)
         # self.mhsa_p4 = BottleneckAttention(dim=112,fmap_size=(48, 48),heads=4)
         # self.mhsa_p5 = BottleneckAttention(dim=112, fmap_size=(24, 24), heads=16)
-        self.mhsa_p6 = BottleneckAttention(dim=112, fmap_size=(12, 12), heads=4)
-        self.mhsa_p7 = BottleneckAttention(dim=112, fmap_size=(6, 6),   heads=4)
+        self.mhsa_p6 = BottleneckAttention(dim=112, fmap_size=(12, 12), heads=16)
+        self.mhsa_p7 = BottleneckAttention(dim=112, fmap_size=(6, 6),   heads=16)
 
         self.first_time = first_time
         if self.first_time:
