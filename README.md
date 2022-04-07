@@ -16,8 +16,8 @@
                 
 2. Run'VOCdevkit/VOC2007/voc2efficientdet.py' to generate the index of data.
 
-    xmlfilepath=r'G:\efficientdet-pytorch-master\VOCdevkit\VOC2007\Annotations_val'
-    saveBasePath=r"G:\efficientdet-pytorch-master\VOCdevkit\VOC2007\ImageSets\Main"
+    xmlfilepath=r'.\VOCdevkit\VOC2007\Annotations_val'
+    saveBasePath=r".\VOCdevkit\VOC2007\ImageSets\Main"
 
 3. Run'voc_annotation.py' to generate a txt file about label informations.
 
