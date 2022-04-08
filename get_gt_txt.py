@@ -31,7 +31,7 @@ if not os.path.exists("./input/ground-truth"):
 
 for image_id in image_ids:
     with open("./input/ground-truth/"+image_id+".txt", "w") as new_f:
-        root = ET.parse("VOCdevkit/VOC2007/Annotations_val/"+image_id+".xml").getroot()
+        root = ET.parse("dataset/SCAUHDM2022/Annotations_test/"+image_id+".xml").getroot()
         for obj in root.findall('object'):
             difficult_flag = False
             if obj.find('difficult')!=None:
@@ -41,15 +41,7 @@ for image_id in image_ids:
             obj_name = obj.find('name').text
             if obj_name == 'no helmet':
                 obj_name = 'no_helmet'
-            '''
-            ！！！！！！！！！！！！注意事项！！！！！！！！！！！！
-            # 这一部分是当xml有无关的类的时候，可以取消下面代码的注释
-            # 利用对应的classes.txt来进行筛选！！！！！！！！！！！！
-            '''
-            # classes_path = 'model_data/voc_classes.txt'
-            # class_names = get_classes(classes_path)
-            # if obj_name not in class_names:
-            #     continue
+
 
             bndbox = obj.find('bndbox')
             left = bndbox.find('xmin').text
