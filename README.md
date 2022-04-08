@@ -5,8 +5,8 @@
 1.Prepare dataset.
 
     # your dataset structure should be like this
-    VOCdevkit/
-        VOC2007/  
+    dataset/
+        SCAUHDM/  
             JPEGImages/
                 *.jpg
                 ...
@@ -16,8 +16,8 @@
                 
 2. Run'VOCdevkit/VOC2007/voc2efficientdet.py' to generate the index of data.
     ```
-    xmlfilepath=r'.\VOCdevkit\VOC2007\Annotations'
-    saveBasePath=r".\VOCdevkit\VOC2007\ImageSets\Main"
+    xmlfilepath=r'your_path\dataset\SCAUHDM\Annotations'
+    saveBasePath=r"your_path\dataset\SCAUHDM\ImageSets\Main"
     ```
 3. Run'voc_annotation.py' to generate a txt file about label informations.
     ```
