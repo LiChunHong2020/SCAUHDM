@@ -8,9 +8,7 @@ from torch import nn
 from torch.nn import functional as F
 from torch.utils import model_zoo
 
-#--------------------------------------------------------------#
-#   模型构建的辅助函数
-#--------------------------------------------------------------#
+
 GlobalParams = collections.namedtuple('GlobalParams', [
     'batch_norm_momentum', 'batch_norm_epsilon', 'dropout_rate',
     'num_classes', 'width_coefficient', 'depth_coefficient',
@@ -93,9 +91,7 @@ class Identity(nn.Module):
     def forward(self, input):
         return input
 
-#--------------------------------------------------------------#
-#   加载模型参数的辅助函数
-#--------------------------------------------------------------#
+
 def efficientnet_params(model_name):
     """ Map EfficientNet model name to parameter coefficients. """
     params_dict = {
