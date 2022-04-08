@@ -9,11 +9,7 @@ import math
 
 import numpy as np
 
-'''
-用于计算mAP
-代码克隆自https://github.com/Cartucho/mAP
-如果想要设定mAP0.x，比如计算mAP0.75，可以设定MINOVERLAP = 0.75。
-'''
+
 MINOVERLAP = 0.5
 
 parser = argparse.ArgumentParser()
