@@ -28,9 +28,6 @@ for image_id in image_ids:
                 if int(difficult)==1:
                     difficult_flag = True
             obj_name = obj.find('name').text
-            if obj_name == 'no helmet':
-                obj_name = 'no_helmet'
-
 
             bndbox = obj.find('bndbox')
             left = bndbox.find('xmin').text
