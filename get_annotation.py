@@ -4,7 +4,7 @@ from os import getcwd
 
 sets=[('2022', 'train'), ('2022', 'val'), ('2022', 'test')]
 
-classes = ["helmet", "bicycler","no helmet", "motorcycler"]
+classes = ["with_helmet", "bicyclist","without_helmet", "motorcyclist"]
 
 
 def convert_annotation(year, image_id, list_file):
