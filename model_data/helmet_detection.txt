@@ -1,4 +1,4 @@
-helmet
-bicycler
-no_helmet
-motorcycler
+with_helmet
+bicyclist
+without_helmet
+motorcyclist
