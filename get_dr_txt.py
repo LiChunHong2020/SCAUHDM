@@ -59,8 +59,6 @@ class mAP_EfficientDet(EfficientDet):
 
         for i, c in enumerate(top_label):
             predicted_class = self.class_names[c]
-            if predicted_class == 'no helmet':
-                predicted_class = 'no_helmet'
             score = str(top_conf[i])
 
             top, left, bottom, right = boxes[i]
